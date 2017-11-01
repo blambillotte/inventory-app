@@ -1,0 +1,23 @@
+{
+  "name": "inventory-app",
+  "version": "1.0.0",
+  "description": "Inventory App CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blambillotte/inventory-app.git"
+  },
+  "author": "Ben Lambillotte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blambillotte/inventory-app/issues"
+  },
+  "homepage": "https://github.com/blambillotte/inventory-app#readme",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "mysql": "^2.15.0"
+  }
+}
