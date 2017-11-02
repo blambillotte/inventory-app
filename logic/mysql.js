@@ -82,7 +82,7 @@ const checkInventory = (productId, quantityReq) => {
 
 function printReciept(productId, price, quantityReq, productName, billAmt) {
   const table = new Table(
-    { head: ['Product ID', 'Product Name', 'Unit Price', 'Quantity', 'Total Amount']}
+    { head: ['Product ID', 'Product Name', 'Unit Price', 'Quantity', 'Total Amount'], style: { head: ['green'] }}
   );
   table.push(
     [productId, productName, `${numeral(price).format('$0,0.00')}`, quantityReq, `${numeral(billAmt).format('$0,0.00')}`]
@@ -94,7 +94,8 @@ function printReciept(productId, price, quantityReq, productName, billAmt) {
 function printTable(data) {
 
   const table = new Table(
-    { head: ['Item ID', 'Product Name', 'Department Name', 'Price', 'Stock Quantity']}
+    { head: ['Item ID', 'Product Name', 'Department Name', 'Price', 'Stock Quantity'], style: { head: ['green'] }}
+
   );
 
   for (let key in data) {
