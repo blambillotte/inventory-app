@@ -4,6 +4,9 @@ Node.js &amp; MySQL Inventory Command Line Application
 ---
 
 ## Functionality
+View inventory levels from the database and make purchase requests.
+
+![Demo Gif]("./setup/demo.gif");
 
 ## Setup
 1) Navigate to project root `$ cd path/to/project/root`

@@ -3,7 +3,7 @@ const queryDB = require('./mysql')
 
 
 const customerInput = () => {
-  return inquirer.prompt([
+  inquirer.prompt([
     {
       name: "productId",
       message: "Specify a product ID",
@@ -21,10 +21,13 @@ const customerInput = () => {
     }
   ]).then(function(answer) {
     queryDB.checkInventory(answer.productId, answer.productQuantity);
-    console.log(answer);
+    //console.log(query);
   });
+  //console.log(prompt);
 }
 
-customerInput();
+//customerInput();
 
 //console.log(queryDB.checkInventory(1, 20));
+
+module.exports = {customerInput};
