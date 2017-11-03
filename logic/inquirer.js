@@ -11,7 +11,6 @@ const customerInput = () => {
         if (!isNaN(value)) {
           return true;
         }
-
         return 'Please enter a valid product number';
       }
     },
@@ -22,8 +21,7 @@ const customerInput = () => {
         if (!isNaN(value)) {
           return true;
         }
-
-        return 'Please enter a valid product number';
+        return 'Please enter a valid numeric quantity';
       }
     }
   ]).then(function(answer) {
