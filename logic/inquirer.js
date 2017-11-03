@@ -7,17 +7,24 @@ const customerInput = () => {
     {
       name: "productId",
       message: "Specify a product ID",
-      // validate: function (value) {
-      //   if (typeof parseInt(value) === 'number') {
-      //     return true;
-      //   }
-      //
-      //   return 'Please enter a valid product number';
-      // }
+      validate: function (value) {
+        if (!isNaN(value)) {
+          return true;
+        }
+
+        return 'Please enter a valid product number';
+      }
     },
     {
       name: 'productQuantity',
-      message: 'How many would you like to buy?'
+      message: 'How many would you like to buy?',
+      validate: function (value) {
+        if (!isNaN(value)) {
+          return true;
+        }
+
+        return 'Please enter a valid product number';
+      }
     }
   ]).then(function(answer) {
     queryDB.checkInventory(answer.productId, answer.productQuantity);

@@ -1,5 +1,5 @@
 const queryDB = require('./logic/mysql')
-const  figlet = require('figlet');
+const figlet = require('figlet');
 const inquire = require('./logic/inquirer');
 const colors = require('colors');
 
